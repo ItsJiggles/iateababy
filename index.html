@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <meta charset="utf-8">
+    <link rel="icon" href="scawwybaby.jpg">
     <style>
         #container {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto auto;
+        }
+        #grid1 {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto;
         }
         body {
-            background-image: url("https://images-cdn.9gag.com/photo/aPyrOLn_700b.jpg");
+            background-image: url("scawwybaby.jpg");
+            cursor: url("cursor.cur"), auto;
         }
         .text {
             color: magenta;
@@ -19,18 +29,31 @@
 </head>
 <body>
     <div id="container">
-
-    <p><span class="text">i ate a baby</span>
-    <img src="https://i.ytimg.com/vi/nB1YG_hJDmI/maxresdefault.jpg" alt="angry baby" style="width: 25vw">
-    <span class="text">&lt;----this is him (hes angry bc i ate him)</span></p>
-    <div>
-    <span class="text">me every day:</span><br>
-    <img src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T31A1PA29PT10X5Y4D1040083848W5123H6148/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/gay-lgbt-cow-farmer-design-for-cow-animal-lover-mug.jpg" alt="holy cow im gay" style="width: 25 vw"/>
-    </div>
-    <div>
-    <span class="text">gegagedigedagedago!!!!!</span>
-    <audio src="nugget.mp3" autoplay loop controls></audio>
-    </div>
+        <div>
+            <span class="text">i ate a baby</span>
+            <img src="angrybaby.jpg" alt="angry baby" style="width: 25vw">
+            <span class="text">&lt;----this is him (hes angry bc i ate him)</span>
+        </div>
+        <div>
+            <span class="text">me every day:</span><br>
+            <img src="gaycow.jpg" alt="holy cow im gay" style="width: 25 vw"/>
+        </div>
+        <div id="grid1">
+            <div>
+                <span class="text">gegagedigedagedago!!!!!</span>
+                <audio src="nugget.mp3" autoplay loop controls></audio>
+            </div>
+            <img src="man.jpg" alt="man but super stretched">
+            <div>
+                <span class="text">mineCRAFT?? MORE LIKE MINE<i>CRAP</i>!!!!</span>
+            </div>
+            <a href="https://twitter.com/intent/tweet?text=i+am+a+skibidi+sigma+because+i+visited+https%3A%2F%2Fiatea.baby" target="_blank">
+                <span class="text">click for free <img src="iptv.png" alt="iptv" style="height: 10vh;"></span>
+            </a>
+        </div>
+        <a href="https://www.google.com/search?q=sexiest+fortnite+skins+naked+hot" target="_blank">
+            <img src="vbucks.png" alt="free vbucks click here">
+        </a>
     </div>
 </body>
 </html>
