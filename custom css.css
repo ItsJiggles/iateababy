@@ -3,7 +3,7 @@
         font-size: 0px;
     }
     #avatar-box > .section_box_body > p > span > b::after {
-        content: 'Pronounces (woke)';
+        content: 'Pronounces (w*ke)';
         visibility: visible;
         font-size: 16px;
     }
