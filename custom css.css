@@ -7,3 +7,6 @@
         visibility: visible;
         font-size: 16px;
     }
+    #friends-box > .section_box_body > a > img {
+        animation: pulse 1s ease-in-out infinite;
+    }
