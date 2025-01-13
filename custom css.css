@@ -1,0 +1,9 @@
+    #avatar-box > .section_box_body > p > span > b {
+        visibility: hidden;
+        font-size: 0px;
+    }
+    #avatar-box > .section_box_body > p > span > b::after {
+        content: 'Pronounces (woke)';
+        visibility: visible;
+        font-size: 16px;
+    }
