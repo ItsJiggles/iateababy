@@ -16,6 +16,8 @@
 
         body {
             font-family: comicsans;
+            background-image: url("scawwybaby.jpg");
+            cursor: url("cursor.cur"), auto;
         }
         #container {
             display: grid;
@@ -29,9 +31,17 @@
             grid-template-columns: auto;
             grid-template-rows: auto auto auto auto auto;
         }
-        body {
-            background-image: url("scawwybaby.jpg");
-            cursor: url("cursor.cur"), auto;
+        #me {
+            float: right;
+            margin-right: 50px;
+            color: black;
+            background: white;
+            text-decoration: none;
+            border-radius: 10px;
+            padding-top: 4px;
+            padding-bottom: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         .text {
             color: magenta;
@@ -69,6 +79,10 @@
             <img src="vbucks.png" alt="free vbucks click here">
         </a>
         <a class="text" href="thelist" style="width: fit-content;">im not the only one! click here to see a list of everyone that has also eaten a baby</a>
+    </div>
+    <br/>
+    <div style="width: 100vw;">
+        <a id="me" target="_blank" href="https://twitter.com/its_jiggles">made by juggles</a>
     </div>
     <img src="who did this.png" style="width: 100vw; height: 100vh; position: fixed; left: 0px; right: 0px; top: 0px; bottom: 0px; pointer-events: none;">
     <div style="width: 100vw; height: 25vh;"></div>

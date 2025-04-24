@@ -11,32 +11,45 @@
 
         body {
             font-family: comicsans;
+            background-image: url("scawwybaby.jpg");
+            cursor: url("cursor.cur"), auto;
+            margin: 0px;
         }
         #list {
             display: grid;
-            grid-template-columns: repeat(10, 1fr);
+            grid-template-columns: repeat(12, 8vw);
+            margin-left: 2vw;
         }
         .image {
             width: 7vw;
-            height: 20vh;
+            height: 7vw;
+            margin: 0.5vw;
         }
         .text {
             text-align: center;
             display: inline-block;
             width: 7vw;
+            color: magenta;
+            background-color: purple;
+            margin: 0.5vw;
+        }
+        .container {
+            width: 8vw;
         }
         
     </style>
 </head>
 <body>
-  <h1 style="text-align: center;">the list</h1>
+  <h1 style="width: 100vw; margin: 0px;" class="text">the list</h1>
+  <h2 style="width: 100vw; margin: 0px; padding-bottom: 5px;" class="text">here are some other people who have eaten babies!</h2>
   <div id="list"></div>
 
   <script>
-    const elements = ["donald trump", "stinky steve", "guitar hero styles", "other stinky steve", "dino", "big bill hell car", "gorfor", "the entire united kingdom", "recently retired tennis player rafael nadal", "hawk tuah", "guy parmelin", "choo choo bob", "tux", "father christmas' huge container", "eerke sijsling", "katie", "kit"]
+    const elements = ["donald trump", "stinky steve", "guitar hero styles", "other stinky steve", "dino", "big bill hell car", "gorfor", "the entire united kingdom", "recently retired tennis player rafael nadal", "hawk tuah", "guy parmelin", "choo choo bob", "tux", "father christmas' huge container", "eerke sijsling", "katie", "kit", "asphalt kicker", "jobepa", "jobloerger", "john", "juggle man", "the laurie berkner band", "mario", "ted", "me", "you", "jackson blue", "paula hodgkins", "gogo", "the new norm", "laruste water image", "best free torrent client", "momma", "wave browser", "muggles"]
     const list = document.getElementById("list")
     elements.forEach(function (item, index) {
       var element = document.createElement("div")
+      element.className = "container"
       var image = document.createElement("img")
       image.src = "thelist/" + item + ".jpg"
       image.alt = item
